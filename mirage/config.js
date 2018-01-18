@@ -24,8 +24,5 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
   */
 
-  this.get('/users', function (schema) {
-    let user = schema.users.first();
-    return this.serialize(user);
-  });
+  this.get('/users');
 }
